@@ -47,28 +47,35 @@ public class StudentComparatorDescTest {
 		
 		System.out.println("Sorted Array List \n:" + list +"\n");
 		
+		//Display the descending order
+		
 		StudentComparatorDescending comparatorDescending = new StudentComparatorDescending();
 		
 		int resultDescending = comparatorDescending.compare(s1, s2);
 		
 		// Display results with descending comparator
 
+		Student[] studentsDesc = {s1,s2,s3};
 		//Unsorted Array
-		System.out.println("Unsorted Array List Desc : \n" + Arrays.toString(students) +"\n");
+		System.out.println("Unsorted Array List Desc : \n" + Arrays.toString(studentsDesc) +"\n");
 		
-		Arrays.sort(students,comparatorDescending);
+		Arrays.sort(studentsDesc,comparatorDescending);
 		
-		System.out.println("Sorted Array Desc : \n" + Arrays.toString(students) +"\n");
+		System.out.println("Sorted Array Desc : \n" + Arrays.toString(studentsDesc) +"\n");
 		
 		
-		//ArrayList
+		//ArrayList Desc
+		List<Student> listDesc = new ArrayList<Student>();
+		listDesc.add(s1);
+		listDesc.add(s2);
+		listDesc.add(s3);
 		
 		//Unsorted Array List desc
-		System.out.println("Unsorted Array List Desc \n:" + list +"\n");
+		System.out.println("Unsorted Array List Desc \n:" + listDesc +"\n");
 		
-		Collections.sort(list,comparatorDescending);
+		Collections.sort(listDesc,comparatorDescending);
 		
-		System.out.println("Sorted Array List Desc \n:" + list +"\n");
+		System.out.println("Sorted Array List Desc \n:" + listDesc +"\n");
 		
 		
 		
